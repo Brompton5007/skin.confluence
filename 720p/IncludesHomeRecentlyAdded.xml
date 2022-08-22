@@ -4,8 +4,7 @@
 		<control type="group" id="9003">
 			<depth>DepthMenu</depth>
 			<onup>20</onup>
-			<ondown condition="Control.IsVisible(600)">600</ondown>
-			<ondown condition="!Control.IsVisible(600)">9000</ondown>
+			<ondown>608</ondown>
 			<visible>!Window.IsVisible(Favourites)</visible>
 			<include>VisibleFadeEffect</include>
 			<animation effect="fade" time="225" delay="750">WindowOpen</animation>
@@ -35,14 +34,14 @@
 					<animation effect="slide" start="0,0" end="270,0" time="0" condition="String.IsEqual(Container(8000).NumItems,2)">conditional</animation>
 					<animation effect="slide" start="0,0" end="360,0" time="0" condition="String.IsEqual(Container(8000).NumItems,1)">conditional</animation>
 					<left>0</left>
-					<top>0</top>
+<!-- DMR CHANGE HEIGHT MOVIES TOP 0 TO 50 -->
+                                        <top>50</top>
 					<width>900</width>
 					<height>220</height>
 					<onleft>8000</onleft>
 					<onright>8000</onright>
 					<onup>20</onup>
-					<ondown condition="Control.IsVisible(600)">600</ondown>
-					<ondown condition="!Control.IsVisible(600)">9000</ondown>
+					<ondown>608</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol/>
 					<scrolltime>200</scrolltime>
@@ -171,6 +170,8 @@
 				<top>50</top>
 				<visible>Library.HasContent(TVShows)</visible>
 				<visible>Container(9000).Hasfocus(11) + !Skin.HasSetting(HomepageHideRecentlyAddedVideo) + !Skin.HasSetting(HomeMenuTVShowUsePlaylist)</visible>
+				<!-- BOSSANOVA808 mod - disable recently avoided for TV, avoid spoilers -->
+				<visible>False</visible>
 				<include>VisibleFadeEffect</include>
 				<control type="label">
 					<description>Title label</description>
@@ -190,14 +191,14 @@
 					<animation effect="slide" start="0,0" end="240,0" time="0" condition="String.IsEqual(Container(8001).NumItems,2)">conditional</animation>
 					<animation effect="slide" start="0,0" end="360,0" time="0" condition="String.IsEqual(Container(8001).NumItems,1)">conditional</animation>
 					<left>0</left>
-					<top>0</top>
+<!-- DMR CHANGE HEIGHT TV TOP 0 TO 50 -->
+                                        <top>50</top>
 					<width>960</width>
 					<height>240</height>
 					<onleft>8001</onleft>
 					<onright>8001</onright>
 					<onup>20</onup>
-					<ondown condition="Control.IsVisible(600)">600</ondown>
-					<ondown condition="!Control.IsVisible(600)">9000</ondown>
+					<ondown>608</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol/>
 					<scrolltime>200</scrolltime>
@@ -371,14 +372,14 @@
 					<animation effect="slide" start="0,0" end="200,0" time="0" condition="String.IsEqual(Container(8002).NumItems,2)">conditional</animation>
 					<animation effect="slide" start="0,0" end="300,0" time="0" condition="String.IsEqual(Container(8002).NumItems,1)">conditional</animation>
 					<left>0</left>
-					<top>0</top>
+<!-- DMR CHANGE HEIGHT RECENTLY ADD MUSIC TOP 0 TO 50 -->
+					<top>50</top>
 					<width>800</width>
 					<height>240</height>
 					<onleft>8002</onleft>
 					<onright>8002</onright>
 					<onup>20</onup>
-					<ondown condition="Control.IsVisible(600)">600</ondown>
-					<ondown condition="!Control.IsVisible(600)">9000</ondown>
+					<ondown>608</ondown>
 					<viewtype label="535">list</viewtype>
 					<pagecontrol/>
 					<scrolltime>200</scrolltime>

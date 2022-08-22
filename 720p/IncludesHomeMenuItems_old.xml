@@ -2,8 +2,9 @@
 <includes>
 	<include name="HomeSubMenuVideos">
 		<control type="image" id="90101">
-			<width>35</width>
-			<height>35</height>
+<!-- DMR CHANGE ALL BUTTON SIZES FROM 35 to 32  CHANGE HomeSubEnd to 33 -->
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90102">
@@ -41,15 +42,15 @@
 			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
 		</control>
 		<control type="image" id="90108">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuMovies">
 		<control type="image" id="90161">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90162">
@@ -88,15 +89,15 @@
 			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(5).Label)</visible>
 		</control>
 		<control type="image" id="90168">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuTVShows">
 		<control type="image" id="90171">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90172">
@@ -135,15 +136,15 @@
 			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(5).Label)</visible>
 		</control>
 		<control type="image" id="90178">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuMusic">
 		<control type="image" id="90111">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<!-- Bossanova808 Mod - Add New Music at pos. 0 -->
@@ -186,15 +187,15 @@
 			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(5).Label)</visible>
 		</control>
 		<control type="image" id="90119">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuSystem">
 		<control type="image" id="90121">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90122">
@@ -236,15 +237,15 @@
 			<visible>system.getbool(eventlog.enabled)</visible>
 		</control>
 		<control type="image" id="90127">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuPlayDisc">
 		<control type="image" id="90131">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90132">
@@ -260,15 +261,15 @@
 			<visible>System.HasMediaAudioCD</visible>
 		</control>
 		<control type="image" id="90134">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuPictures">
 		<control type="image" id="90147">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90148">
@@ -277,15 +278,15 @@
 			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
 		</control>
 		<control type="image" id="90149">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuTV">
 		<control type="image" id="90141">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90143">
@@ -319,15 +320,15 @@
 			<onclick>ActivateWindow(TVSearch)</onclick>
 		</control>
 		<control type="image" id="90149">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuRadio">
 		<control type="image" id="90141">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90243">
@@ -361,15 +362,15 @@
 			<onclick>ActivateWindow(RadioSearch)</onclick>
 		</control>
 		<control type="image" id="90249">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>
 	<include name="HomeSubMenuAddons">
 		<control type="image" id="90301">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
 		</control>
 		<control type="button" id="90302">
@@ -393,8 +394,8 @@
 			<onclick>ActivateWindow(addonbrowser,addons://search,return)</onclick>
 		</control>
 		<control type="image" id="90306">
-			<width>35</width>
-			<height>35</height>
+			<width>32</width>
+			<height>33</height>
 			<texture border="0,0,0,3">HomeSubEnd.png</texture>
 		</control>
 	</include>

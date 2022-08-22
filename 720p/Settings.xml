@@ -215,7 +215,7 @@
 				<width>600</width>
 				<height>340</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>GlassOverlay.png</texture>
+<!-- DMR REMOVE <texture>GlassOverlay.png</texture> -->
 				<colordiffuse>AAFFFFFF</colordiffuse>
 			</control>
 			<control type="image">
