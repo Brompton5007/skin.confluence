@@ -88,6 +88,13 @@ msgctxt "#31050"
 msgid "Sort: Ascending"
 msgstr "Sort: Ascending"
 
+#GADE01 mod DMR 01082022
+#empty strings from id 31018 to 31021
+
+msgctxt "#31022"
+msgid "Play speed"
+msgstr ""
+#END GADE01 MOD 
 msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr "Sort: Descending"
