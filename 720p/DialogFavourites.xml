@@ -8,19 +8,22 @@
 	<controls>
 		<control type="group">
 			<depth>DepthSideBlade</depth>
-			<animation effect="slide" start="400,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="400,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
+<!-- DMR CHANGE SLIDE START 400,0 TO 360,0 -->
+			<animation effect="slide" start="360,0" end="0,0" time="300" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="360,0" time="300" tween="quadratic" easing="out">WindowClose</animation>
 			<control type="image">
-				<left>400r</left>
-				<top>0</top>
-				<width>420</width>
-				<height>720</height>
+<!-- DMR CHANGE LEFT 400r TO 1212r TO ALIGN FAVOURITES DIALOG BOX NEXT TO BUTTON TOP 0 TO 100 -->
+<left>1212r</left>
+<top>100</top>
+				<width>450</width>
+				<height>580</height>
 				<texture border="15,0,0,0" flipx="true">HomeBladeSub.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
-				<left>380r</left>
-				<top>0</top>
+<!-- DMR CHANGE LEFT 380r TO 825r TO ALIGN NEXT TO FAVOURITES OPEN BUTTON TOP 0 TO 100 -->
+<left>825r</left>
+<top>105</top>
 				<width>64</width>
 				<height>32</height>
 				<label/>
@@ -35,10 +38,12 @@
 				<visible>system.getbool(input.enablemouse)</visible>
 			</control>
 			<control type="image">
-				<left>370r</left>
-				<top>30</top>
-				<width>200</width>
-				<height>200</height>
+<!-- DMR ALIGN AND POSITION FAVOURITES THUMB -->
+<left>1150r</left>
+<top>120</top>
+<!-- DMR THE TO PROVIDE CORRECT ASPECT RATIO NEXT TWO DIMENSIONS SHOULD BE A MULTIPULE OF 16 9 -->
+				<width>300</width>
+				<height>169</height>
 				<aspectratio align="center">keep</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<texture>$INFO[ListItem.Icon]</texture>
@@ -46,29 +51,30 @@
 				<bordersize>8</bordersize>
 			</control>
 			<control type="list" id="450">
-				<left>390r</left>
-				<top>250</top>
+<!-- DMR CHANGE LEFT 390r TO 1210r TO ALIGN NEXT TO FAVOURITES OPEN BUTTON TOP 150 TO 300 -->
+<left>1210r</left>
+<top>300</top>
 				<width>450</width>
-				<height>380</height>
+				<height>350</height>
 				<onup>450</onup>
 				<onleft>Dialog.Close(Favourites)</onleft>
 				<onright>450</onright>
 				<ondown>450</ondown>
 				<pagecontrol/>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="40">
+				<itemlayout height="35">
 					<control type="image">
-						<left>0</left>
+						<left>5</left>
 						<top>0</top>
-						<width>370</width>
-						<height>40</height>
+						<width>440</width>
+						<height>35</height>
 						<texture border="5">button-nofocus.png</texture>
 					</control>
 					<control type="label">
 						<left>10</left>
 						<top>0</top>
-						<width>350</width>
-						<height>40</height>
+						<width>430</width>
+						<height>35</height>
 						<font>font12_title</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -78,26 +84,26 @@
 				</itemlayout>
 				<focusedlayout height="40">
 					<control type="image">
-						<left>0</left>
+						<left>5</left>
 						<top>0</top>
-						<width>370</width>
-						<height>40</height>
+						<width>440</width>
+						<height>35</height>
 						<visible>!Control.HasFocus(450)</visible>
 						<texture border="3">button-nofocus.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
+						<left>5</left>
 						<top>0</top>
-						<width>370</width>
-						<height>40</height>
+						<width>440</width>
+						<height>35</height>
 						<visible>Control.HasFocus(450)</visible>
 						<texture border="3">button-focus.png</texture>
 					</control>
 					<control type="label">
 						<left>10</left>
 						<top>0</top>
-						<width>350</width>
-						<height>40</height>
+						<width>430</width>
+						<height>35</height>
 						<font>font12_title</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -108,10 +114,11 @@
 			</control>
 			<control type="label">
 				<description>Page label</description>
-				<right>30</right>
-				<top>670</top>
+<!-- ALIGN PAGE INFO LABLE to above RSS feed and inside dialog-->				
+				<right>770</right>
+				<top>640</top>
 				<width>350</width>
-				<height>30</height>
+				<height>45</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font12</font>

@@ -31,8 +31,9 @@
 			<texture>black-back.png</texture>
 		</control>
 		<control type="grouplist" id="9000">
-			<left>470</left>
-			<top>0</top>
+<!-- DMR ALIGN DIALOG TO OPEN NEXT TO BUTTON CHANGE LEFT 470 TO 860 TOP 0 TO 210 -->
+			<left>875</left>
+			<top>215</top>
 			<width>340</width>
 			<height>720</height>
 			<onleft>9000</onleft>
