@@ -18,7 +18,8 @@
 				<control type="label">
 					<description>Title label</description>
 					<left>180</left>
-					<top>220</top>
+<!-- DMR change height from 220 to 285 Recently Addded Movies label -->					
+					<top>285</top>
 					<height>20</height>
 					<width>540</width>
 					<label>20386</label>
@@ -176,7 +177,8 @@
 				<control type="label">
 					<description>Title label</description>
 					<left>240</left>
-					<top>220</top>
+<!-- DMR change height from 220 to 285 Recently Added TV label even though not used -->					
+					<top>285</top>
 					<height>20</height>
 					<width>480</width>
 					<label>20387</label>
@@ -335,7 +337,7 @@
 					<visible>Control.HasFocus(8001) + Container(8001).HasPrevious</visible>
 					<include>VisibleFadeEffect</include>
 				</control>
-				<control type="button">
+				<control type="button">recent
 					<description>right Arrow</description>
 					<left>970</left>
 					<top>90</top>
@@ -357,7 +359,8 @@
 				<control type="label">
 					<description>Title label</description>
 					<left>160</left>
-					<top>220</top>
+<!-- DMR change height from 220 to 285 Recently Addded Albums label -->					
+					<top>285</top>
 					<height>20</height>
 					<width>480</width>
 					<label>359</label>
